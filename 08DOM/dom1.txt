@@ -1,0 +1,83 @@
+document.getElementById('title').id
+'title'
+
+document.getElementById('title').className
+''
+
+document.getElementById('title').setAttribute('class', 'heading')
+undefined
+
+document.getElementById('title')
+<h1 id=​"title" class=​"heading">​DOM LEARNING IN ZETA​</h1>​
+
+document.getElementById('title').getAttribute('id')
+'title'
+
+title.style.backgroundColor ='green'
+'green'
+
+title.style.padding = 15px
+VM1069:1 Uncaught SyntaxError: Invalid or unexpected token
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
+
+
+title.style.padding = '15px'
+'15px'
+
+title.style.borderRadius = '25px'
+'25px'
+
+title.innerText
+'DOM LEARNING IN ZETA'    // only inner text oh h1
+
+title.textContent
+'DOM LEARNING IN ZETA'.  //all text inside h1(inside span display none also)
+
+title.innerHTML
+'DOM LEARNING IN ZETA'.  // all html cotent text with style tag and all.
+
+document.querySelector('h1')
+<h1 id=​"title">​DOM LEARNING IN ZETA​</h1>​
+
+document.querySelectorAll('h1')
+NodeList(2) [h1#title, h1]
+
+document.querySelector(#title)
+VM1642:1 Uncaught SyntaxError: Unexpected identifier '#title'
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
+
+document.querySelector('#title')
+<h1 id=​"title">​DOM LEARNING IN ZETA​</h1>​
+
+
+const htmlList = document.getElementsByClassName('list')
+undefined
+
+htmlList.forEach()
+VM2561:1 Uncaught TypeError: htmlList.forEach is not a function
+    at <anonymous>:1:10
+(anonymous) @ VM2561:1
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
+
+
+const arr= Array.from(htmlList)
+undefined
+
+arr.forEach((list)=>{
+    console.log(list) })
+VM2607:2 <li class=​"list">​…​</li>​
+VM2607:2 <li class=​"list">​…​</li>​
+undefined
+
